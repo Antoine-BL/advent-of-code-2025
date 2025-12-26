@@ -1,4 +1,4 @@
-use std::{error::Error, fs::File, io::{self, BufReader}};
+use std::{error::Error, fs::File, io::{self, BufReader}, ops::Div};
 use crate::utils::read_lines;
 
 const START_POS: i32 = 50;
@@ -49,20 +49,21 @@ pub fn part2(input_path: &str) -> Result<(), Box<dyn Error>> {
             },
             _ => return Err(format!("invalid instruction {}", line).into())
         };
-        let n_turns: i32 = chars.as_str().parse::<i32>()?;
+        let n_turns = chars.as_str().parse::<i32>()?;
 
-        let start_over_0 = pos > 0;
+        let prev_pos = pos;
         pos += n_turns * dir_mod;
         
-        score += pos / MAX_POS;
-        if pos <= 0 && start_over_0 {
+        score += (pos / MAX_POS).abs();
+
+        
+        if pos <= 0 {
+            score += 1;
+        } else if (prev_pos > 0 && pos < 0) || (prev_pos < 0 && pos > 0) {
             score += 1;
         }
-    
+
         pos = pos % MAX_POS;
-        if pos < 0 {
-            pos += MAX_POS;
-        }
     }
 
     println!("{}", score);
