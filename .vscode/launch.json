@@ -27,6 +27,270 @@
                 ]
             },
             "args": ["1", "2"]
+        },
+        {
+            "name": "Debug 2-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["2", "1"]
+        },
+        {
+            "name": "Debug 2-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["2", "2"]
+        },
+        {
+            "name": "Debug 3-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["3", "1"]
+        },
+        {
+            "name": "Debug 3-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["3", "2"]
+        },
+        {
+            "name": "Debug 4-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["4", "1"]
+        },
+        {
+            "name": "Debug 4-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["4", "2"]
+        },
+        {
+            "name": "Debug 5-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["5", "1"]
+        },
+        {
+            "name": "Debug 5-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["5", "2"]
+        },
+        {
+            "name": "Debug 6-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["6", "1"]
+        },
+        {
+            "name": "Debug 6-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["6", "2"]
+        },
+        {
+            "name": "Debug 7-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["7", "1"]
+        },
+        {
+            "name": "Debug 7-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["7", "2"]
+        },
+        {
+            "name": "Debug 8-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["8", "1"]
+        },
+        {
+            "name": "Debug 8-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["8", "2"]
+        },
+        {
+            "name": "Debug 9-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["9", "1"]
+        },
+        {
+            "name": "Debug 9-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["9", "2"]
+        },
+        {
+            "name": "Debug 10-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["10", "1"]
+        },
+        {
+            "name": "Debug 10-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["10", "2"]
+        },
+        {
+            "name": "Debug 11-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["11", "1"]
+        },
+        {
+            "name": "Debug 11-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["11", "2"]
+        },
+        {
+            "name": "Debug 12-1",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["12", "1"]
+        },
+        {
+            "name": "Debug 12-2",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=advent-of-code-2025"
+                ]
+            },
+            "args": ["12", "2"]
         }
     ]
 }

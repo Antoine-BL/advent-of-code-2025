@@ -1,14 +1,14 @@
-use std::{error::Error, fs::File, io::{self, BufReader}, ops::Div};
+use std::{error::Error, fs::File, io::{self, BufReader}, u64};
 use crate::utils::read_lines;
 
 const START_POS: i32 = 50;
 const MAX_POS: i32 = 100;
 
-pub fn part1(input_path: &str) -> Result<(), Box<dyn Error>> {
+pub fn part1(input_path: &str) -> Result<u64, Box<dyn Error>> {
     let lines: io::Lines<BufReader<File>> = read_lines(input_path)?;
    
-    let mut score = 0;
-    let mut pos = START_POS;
+    let mut score: u64 = 0;
+    let mut pos: i32 = START_POS;
     for line in lines.map_while(Result::ok) {
         let mut chars = line.chars();
         let dir_mod = match chars.next() {
@@ -29,16 +29,14 @@ pub fn part1(input_path: &str) -> Result<(), Box<dyn Error>> {
         }
     }
 
-    println!("{}", score);
-
-    return Ok(())
+    return Ok(score)
 }
 
-pub fn part2(input_path: &str) -> Result<(), Box<dyn Error>> {
+pub fn part2(input_path: &str) -> Result<u64, Box<dyn Error>> {
     let lines: io::Lines<BufReader<File>> = read_lines(input_path)?;
    
-    let mut score = 0;
-    let mut pos = START_POS;
+    let mut score: u64 = 0;
+    let mut pos: i32 = START_POS;
     for line in lines.map_while(Result::ok) {
         let mut chars = line.chars();
         let dir_mod = match chars.next() {
@@ -54,8 +52,7 @@ pub fn part2(input_path: &str) -> Result<(), Box<dyn Error>> {
         let prev_pos = pos;
         pos += n_turns * dir_mod;
         
-        score += (pos / MAX_POS).abs();
-
+        score += (pos / MAX_POS).abs() as u64;
         
         if pos <= 0 {
             score += 1;
@@ -66,7 +63,5 @@ pub fn part2(input_path: &str) -> Result<(), Box<dyn Error>> {
         pos = pos % MAX_POS;
     }
 
-    println!("{}", score);
-
-    return Ok(())
+    return Ok(score)
 }
